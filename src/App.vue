@@ -37,5 +37,6 @@ export default {
   box-shadow: 5px 0px 10px 0px rgba(0, 0, 0, 0.15);
   z-index: 1;
   padding: 30px 15px 50px 15px;
+  background-color: rgb(220, 220, 240);
 }
 </style>

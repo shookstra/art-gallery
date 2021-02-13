@@ -9,9 +9,11 @@
           height="1350"
           class="post-main-image"
         />
-        <p>A commision portrait piece.</p>
-        <p>Acrylic on canvas</p>
-        <p class="post-date">February 2021.</p>
+        <div class="post-paragraphs">
+          <p>A commision portrait piece.</p>
+          <p class="post-medium">Acrylic on canvas</p>
+          <p class="post-date">February 2021.</p>
+        </div>
       </div>
       <div class="post">
         <h2 class="post-title">Snowy Building</h2>
@@ -20,11 +22,14 @@
           height="310"
           class="post-main-image"
         />
-        <p>
-          Inspired by a reddit post. Created entirely using a palette knife.
-        </p>
-        <p>Acrylic on canvas</p>
-        <p class="post-date">February 2021.</p>
+        <div class="post-paragraphs">
+          <p>
+            Inspired by a reddit post. Link posted soon. Created entirely using
+            a palette knife.
+          </p>
+          <p class="post-medium">Acrylic on canvas</p>
+          <p class="post-date">February 2021.</p>
+        </div>
       </div>
       <div class="post">
         <h2 class="post-title">Flowers</h2>
@@ -33,20 +38,24 @@
           height="1350"
           class="post-main-image"
         />
-        <p>A field of flowers.</p>
-        <p>Acrylic on canvas</p>
-        <p class="post-date">Febrary 2021.</p>
+        <div class="post-paragraphs">
+          <p>A field of flowers.</p>
+          <p class="post-medium">Acrylic on canvas</p>
+          <p class="post-date">Febrary 2021.</p>
+        </div>
       </div>
       <div class="post">
         <h2 class="post-title">Lemon</h2>
         <img src="../images/lemon.jpg" height="1350" class="post-main-image" />
         <img src="../images/real-lemon.jpg" height="250" class="" />
-        <p>
-          Still life painting of a lemon. Plate and lemon done completely with a
-          palette knife.
-        </p>
-        <p>Acrylic on canvas</p>
-        <p class="post-date">January 2021.</p>
+        <div class="post-paragraphs">
+          <p>
+            Still life painting of a lemon. Plate and lemon done completely with
+            a palette knife.
+          </p>
+          <p class="post-medium">Acrylic on canvas</p>
+          <p class="post-date">January 2021.</p>
+        </div>
       </div>
       <div class="post">
         <h2 class="post-title">Cloud Series</h2>
@@ -60,9 +69,11 @@
           height="1350"
           class="post-main-image"
         />
-        <p>Series of three works. Clouds</p>
-        <p>Acrylic on canvas</p>
-        <p class="post-date">December 2020.</p>
+        <div class="post-paragraphs">
+          <p>Series of three works. Clouds. More pictures to come.</p>
+          <p class="post-medium">Acrylic on canvas</p>
+          <p class="post-date">December 2020.</p>
+        </div>
       </div>
       <div class="post">
         <h2 class="post-title">Treeline</h2>
@@ -71,9 +82,11 @@
           height="1350"
           class="post-main-image"
         />
-        <p>Night sky and treeline. First painting since 2017.</p>
-        <p>Acrylic on canvas</p>
-        <p class="post-date">December 2020.</p>
+        <div class="post-paragraphs">
+          <p>Night sky and treeline. First painting since 2017.</p>
+          <p class="post-medium">Acrylic on canvas</p>
+          <p class="post-date">December 2020.</p>
+        </div>
       </div>
     </div>
   </div>
@@ -90,11 +103,14 @@ export default {
 .home {
   /* padding: 30px 5px; */
   /* border: 1px solid red; */
+  /* background-color: rgba(240, 240, 255); */
 }
 
 .home-title {
+  font-size: 2.5rem;
   margin: 0 auto;
   width: 700px;
+  padding: 0px 0px 5px 0px;
 }
 
 .posts {
@@ -106,19 +122,23 @@ export default {
   width: 700px;
   /* border: 1px solid red; */
   margin: 0 auto;
-  color: rgb(50, 50, 100);
+  /* color: rgb(30, 30, 70); */
 }
 
 .post {
-  padding: 20px 10px;
-  background-color: rgba(230, 230, 250);
-  margin: 10px 0px;
+  padding: 25px 10px 10px 10px;
+  background-color: rgba(240, 240, 255);
+  margin: 5px 0px;
   border-radius: 5px;
-  /* border: 1px solid blue; */
+  color: rgb(60, 60, 120);
+  /* border: 2px solid rgb(60, 60, 120); */
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.15);
 }
 
 .post-title {
   padding-bottom: 15px;
+  color: rgb(50, 50, 100);
+  font-size: 2rem;
 }
 
 .post-main-image {
@@ -127,8 +147,19 @@ export default {
   border-radius: 5px;
 }
 
+.post-paragraphs {
+  background-color: #ffcad4;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+.post-medium {
+  font-weight: bold;
+  /* color: rgb(80, 80, 140); */
+}
+
 .post-date {
   font-style: italic;
-  color: rgb(120, 120, 180);
+  /* color: rgb(80, 80, 140); */
 }
 </style>
